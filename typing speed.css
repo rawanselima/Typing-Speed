@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+:root {
+  --blue: #208be8;
+  --green: #038387;
+  --grey: #dbdbdb;
+}
+
+body {
+  background-color: var(--grey);
+}
+
+.game {
+  width: 100%;
+  text-align: center;
+}
+header {
+  padding: 15px;
+  background-color: var(--blue);
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.level,
+.start button,
+.input-field input,
+.words,
+footer,
+.word-written,
+.fail,
+.good {
+  margin: 15px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  width: 700px;
+}
+.word-written {
+  display: none;
+}
+.word-written p {
+  font-size: 35px;
+  font-weight: bold;
+  color: var(--blue);
+}
+.start button {
+  background-color: var(--green);
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-top: 0;
+}
+.input-field input {
+  border: 2px solid var(--blue);
+  margin-top: 0;
+}
+.words {
+  margin-top: 0;
+  user-select: none;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.words span {
+  background-color: var(--blue);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 5px 5px 0 0;
+}
+.input-field input:focus {
+  outline: none;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+span {
+  color: var(--green);
+}
+
+.fail,
+.good {
+  color: red;
+  font-size: 20px;
+  font-weight: bold;
+  display: none;
+}
